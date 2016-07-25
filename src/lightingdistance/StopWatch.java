@@ -5,6 +5,8 @@
  */
 package lightingdistance;
 
+import java.text.DecimalFormat;
+
 /**
  *
  * @author kuba
@@ -46,7 +48,9 @@ public class StopWatch {
     
     public String toString(){
        
-        return name + ": " + this.takeScore() + " s.";
+        return name + ": " + new DecimalFormat("##.##").format(this.takeScore()) + " s.";
         
     }
+         
 }
+
