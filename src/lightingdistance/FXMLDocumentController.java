@@ -11,6 +11,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 /**
@@ -19,12 +20,13 @@ import javafx.scene.control.Label;
  */
 public class FXMLDocumentController implements Initializable {
     
-    private final StopWatch stoper = new StopWatch("Time");
+    private final StopWatch stoper = new StopWatch("");
     
     private Boolean counting = false;
     
     double distance;
-    
+    @FXML
+    private Button button;
     @FXML
     private Label label;
     @FXML
@@ -38,17 +40,21 @@ public class FXMLDocumentController implements Initializable {
             stoper.start();
         System.out.println("You clicked me!");
           
+            button.setText("Stop");
+            
         counting = true;
               
-        }else if(counting == true){
-              stoper.stop();
-        System.out.println(stoper);
-         label.setText(stoper.toString());
-         counting = false;
+            }else if(counting == true){
+                  stoper.stop();
+                  System.out.println(stoper);
+                  label.setText(stoper.toString());
+         
+                  counting = false;
          
          distance = stoper.takeScore()/3;
          label1.setText( new DecimalFormat("##.##").format(distance)+" km");
          
+         button.setText("Start");
         }
         
     }

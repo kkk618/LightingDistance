@@ -4,12 +4,12 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="319.0" prefWidth="231.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="lightingdistance.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="319.0" prefWidth="231.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lightingdistance.FXMLDocumentController">
     <children>
-        <Button fx:id="button" layoutX="60.0" layoutY="34.0" onAction="#handleButtonAction" prefHeight="86.0" prefWidth="111.0" text="Click Me!" />
-        <Label fx:id="label" layoutX="81.0" layoutY="139.0" minHeight="16" minWidth="69" />
-      <Label fx:id="label1" layoutX="81.0" layoutY="177.0" minHeight="16" minWidth="69" />
-      <Label fx:id="label2" layoutX="81.0" layoutY="204.0" minHeight="16" minWidth="69" />
-      <Label fx:id="label3" layoutX="81.0" layoutY="221.0" minHeight="16" minWidth="69" />
+        <Button fx:id="button" layoutX="60.0" layoutY="34.0" onAction="#handleButtonAction" prefHeight="86.0" prefWidth="111.0" text="Start" />
+        <Label fx:id="label" layoutX="137.0" layoutY="148.0" minHeight="16" minWidth="69" />
+      <Label fx:id="label1" layoutX="127.0" layoutY="208.0" minHeight="16" minWidth="69" />
+      <Label fx:id="label2" layoutX="26.0" layoutY="208.0" minHeight="16" minWidth="69" text="Distance" />
+      <Label fx:id="label3" layoutX="26.0" layoutY="148.0" minHeight="16" minWidth="69" text="Time" />
     </children>
 </AnchorPane>

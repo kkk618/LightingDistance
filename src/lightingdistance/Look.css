@@ -8,3 +8,27 @@ and open the template in the editor.
     Author     : Jakub Kućma 
 */
 
+.root{
+    
+    
+   -fx-background-image: url("background.png");
+}
+    
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFD700;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+
+.button{
+    
+    -fx-background-image:  url("Lighting.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 70px 60px; 
+    -fx-background-position: 30px 15px;
+    -fx-border-color: #FFD700;
+    -fx-border-width: 5px;
+    -fx-background-color:  #F0FFFF;
+}
